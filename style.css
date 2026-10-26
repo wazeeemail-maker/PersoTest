@@ -1,0 +1,82 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.hidden { display: none !important; }
+
+h1 { margin-top: 0; font-size: 26px; }
+h2 { font-size: 20px; line-height: 1.4; }
+
+.intro-text { line-height: 1.5; color: #444; }
+
+#progress { color: #888; margin: 0 0 8px; }
+
+.bar {
+  height: 8px;
+  background: #e5e9f5;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 0;
+  background: #4a6cf7;
+  transition: width 0.3s;
+}
+
+#answers button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: inherit;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#answers button:hover { border-color: #4a6cf7; background: #f5f7ff; }
+
+.main-btn {
+  margin-top: 15px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-family: inherit;
+  border: none;
+  border-radius: 8px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+}
+
+.main-btn:hover { background: #3a58d6; }
+
+.result-label { color: #888; margin: 0; }
+.result-emoji { font-size: 54px; margin: 10px 0; }
+#result-text { line-height: 1.5; color: #333; }
+.result-score { color: #888; font-size: 14px; }
